@@ -7,12 +7,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <style type="text/css">
         </style>
+        <!-- REVIEW
+styling not allowed in HTML, but you're not using this, so delete these lines
+-->
 </head>
 
 <figure><img src="images/splitslogo3.png" class="imglogo"></figure>
 <figure><img src="images/WebName.png" class="imgWebName"></figure>
+<!-- REVIEW
+these images do not work, and should be placed inside the body
+-->
 <body>
+  <!-- REVIEW
+body should start right after the </head>
+  -->
 <center>
+  <!-- REVIEW
+this is styling, and this element is not allowed anymore in HTML5
+-->
     <header>
             <nav>
             <ul id="navmenuHome">
@@ -25,6 +37,9 @@
                         <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#modern">Modern Jazz</a></li>
                         <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#javanese">Javanese</a></li>
                         <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#cheerleading">Cheerleading</a></li>
+                        <!-- REVIEW
+                        why are you using local links here? styles.html#ballet should be sufficient
+-->
                     </ul>
                 </li>
                 <li><a href="gallery.html">GALLERY</a></li>
@@ -35,6 +50,9 @@
 
 
 <div id="container">
+  <!-- REVIEW
+  double, use the main as a replacement for the div -> <main id="container">
+  -->
 <main>
          <div class="slideShowImages">
             <figure>
@@ -42,13 +60,19 @@
                     <img src="images/red.jpg" alt="Slide 2" />
                     <img src="images/ballerinas.jpg" alt="Slide 3" />
                     <img src="images/rsz_modern1.jpg" alt="Slide 4" />
+                    <!-- REVIEW
+these images do not work
+-->
             </figure>
-         </div> 
-    
-        
+         </div>
+
+
         <div id="welcome_area">
-            <div id="banner2"> 
-                <blockquote><strong>"DANCING IS LIKE DREAMING WITH YOUR FEET"</strong> -Constanze Mozart</blockquote> 
+          <!-- REVIEW
+          this div could be an article instead of a div
+        -->
+            <div id="banner2">
+                <blockquote><strong>"DANCING IS LIKE DREAMING WITH YOUR FEET"</strong> -Constanze Mozart</blockquote>
             </div>
             <img src="images/doll4.gif" class="imgleft" alt="Ballerina DANCING">
             <h2>  WELCOME ! </h2>
@@ -59,11 +83,14 @@
         </div>
     </main>
 
-    <div id="banner2"> 
+    <div id="banner2">
         <blockquote><strong>"DANCERS ARE THE ATHLETES OF GOD"</strong> -Albert Einstein</blockquote>
     </div>
 
     <div id="latestUpdates">
+      <!-- REVIEW
+      this could be an article
+-->
     <h1> Take a look at our latest performances: </h1>
         <div class="wrapper">
             <div class="galHome">
@@ -76,18 +103,24 @@
                 <div class="galHome">
                     <figure><img src="images/h6copy2.jpg"></figure>
                 </div>
+                <!-- REVIEW
+these images do not work
+-->
             </a>
         </div>
         <div class="video-box">
             <div class="video-wrapper">
                 <video width="500" height="350" controls>
                     <source src="myVideo.mp4" type="video/mp4">
+                      <!-- REVIEW
+this video does not work, it's not in the source files
+-->
                 </video>
             </div>
         </div>
     </div>
 
-    <div id="banner2"> 
+    <div id="banner2">
         <blockquote><strong>"LIFE IS THE DANCER AND YOU ARE THE DANCE"</strong> -Eckhart Tolle</blockquote>
     </div>
 
@@ -95,16 +128,16 @@
 
     </div>
 
-    <div id="banner3"> 
+    <div id="banner3">
         <p><strong>"We LOVE what we do!"</strong> </p>
     </div>
 
 </div>
 </center>
     <footer>
-            <p> &copy; 2016 DancingDoll </p> 
+            <p> &copy; 2016 DancingDoll </p>
     </footer>
-    
+
 
 
 <script type="text/javascript">
