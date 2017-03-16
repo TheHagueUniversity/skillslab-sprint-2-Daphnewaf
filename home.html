@@ -5,41 +5,25 @@
     <meta charset="utf-8">
     <title> The DancingDoll </title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <style type="text/css">
-        </style>
-        <!-- REVIEW
-styling not allowed in HTML, but you're not using this, so delete these lines
--->
 </head>
 
+
+<body>
 <figure><img src="images/splitslogo3.png" class="imglogo"></figure>
 <figure><img src="images/WebName.png" class="imgWebName"></figure>
-<!-- REVIEW
-these images do not work, and should be placed inside the body
--->
-<body>
-  <!-- REVIEW
-body should start right after the </head>
-  -->
 <center>
-  <!-- REVIEW
-this is styling, and this element is not allowed anymore in HTML5
--->
     <header>
             <nav>
             <ul id="navmenuHome">
-                <li><a href="home.html">HOME</a></li>
+                <li><a href="home.html" class="activePage">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li>
                     <a href="styles.html">STYLES &#9662;</a>
                     <ul class="dropdown">
-                        <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#ballet">Ballet</a></li>
-                        <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#modern">Modern Jazz</a></li>
-                        <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#javanese">Javanese</a></li>
-                        <li><a href="file:///C:/Users/Daphi/Desktop/skillslab-sprint-2-Daphnewaf/styles.html#cheerleading">Cheerleading</a></li>
-                        <!-- REVIEW
-                        why are you using local links here? styles.html#ballet should be sufficient
--->
+                        <li><a href="styles.html#ballet">Ballet</a></li>
+                        <li><a href="styles.html#modern">Modern Jazz</a></li>
+                        <li><a href="styles.html#javanese">Javanese</a></li>
+                        <li><a href="styles.html#cheerleading">Cheerleading</a></li>
                     </ul>
                 </li>
                 <li><a href="gallery.html">GALLERY</a></li>
@@ -49,48 +33,34 @@ this is styling, and this element is not allowed anymore in HTML5
        </header>
 
 
-<div id="container">
-  <!-- REVIEW
-  double, use the main as a replacement for the div -> <main id="container">
-  -->
-<main>
+<main id="container">
          <div class="slideShowImages">
             <figure>
                     <img src="images/rsz_modern2.jpg" alt="Slide 1" />
                     <img src="images/red.jpg" alt="Slide 2" />
                     <img src="images/ballerinas.jpg" alt="Slide 3" />
                     <img src="images/rsz_modern1.jpg" alt="Slide 4" />
-                    <!-- REVIEW
-these images do not work
--->
             </figure>
-         </div>
-
-
+         </div> 
+    
+        
         <div id="welcome_area">
-          <!-- REVIEW
-          this div could be an article instead of a div
-        -->
-            <div id="banner2">
+            <article id="banner2"> 
                 <blockquote><strong>"DANCING IS LIKE DREAMING WITH YOUR FEET"</strong> -Constanze Mozart</blockquote>
-            </div>
-            <img src="images/doll4.gif" class="imgleft" alt="Ballerina DANCING">
+            </article>
+            <figure><img src="images/doll4.gif" class="imgleft" alt="Ballerina DANCING"></figure>
             <h2>  WELCOME ! </h2>
             <p> Located in the The Hague, the Netherlands, the Dancing Doll website is about dolls that <strong> come to life </strong> <em> whenever the owner plays some music.</em> They dance in all kind of style, such as: ballet, tap, jazz, javanese and hip-hop on the level of beginners, advanced or it falls somewhere in-between. </p>
             <p>DD believes that a personal approach is the key to providing the best dancing performances. That's why the owner teaches the dolls herself. Her goal is not only to provide the best quality dance performance, but to help build self-assurance and confidence through positive reinforcement.She is driven to instruct her dolls to become the dancer of their dreams. </p>
-            <p>DD is pleased to welcome you to the Dancing Doll website. If you have any questions, please contact us.
-            </p>
+            <p>DD is pleased to welcome you to the Dancing Doll website. If you have any questions, please <a href="contact.html">
+            contact us.</a></p>
         </div>
-    </main>
 
-    <div id="banner2">
+    <article id="banner2"> 
         <blockquote><strong>"DANCERS ARE THE ATHLETES OF GOD"</strong> -Albert Einstein</blockquote>
-    </div>
+    </article>
 
-    <div id="latestUpdates">
-      <!-- REVIEW
-      this could be an article
--->
+    <article id="latestUpdates">
     <h1> Take a look at our latest performances: </h1>
         <div class="wrapper">
             <div class="galHome">
@@ -103,46 +73,33 @@ these images do not work
                 <div class="galHome">
                     <figure><img src="images/h6copy2.jpg"></figure>
                 </div>
-                <!-- REVIEW
-these images do not work
--->
             </a>
         </div>
         <div class="video-box">
             <div class="video-wrapper">
-                <video width="500" height="350" controls>
-                    <source src="myVideo.mp4" type="video/mp4">
-                      <!-- REVIEW
-this video does not work, it's not in the source files
--->
-                </video>
+                <iframe width="500" height="350" src="https://www.youtube.com/embed/8W_1vg7W6Oo?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+    </article>
 
-    <div id="banner2">
+    <article id="banner2"> 
         <blockquote><strong>"LIFE IS THE DANCER AND YOU ARE THE DANCE"</strong> -Eckhart Tolle</blockquote>
-    </div>
+    </article>
 
     <div class="sect2 passionPic">
-
     </div>
 
-    <div id="banner3">
+    <article id="banner3"> 
         <p><strong>"We LOVE what we do!"</strong> </p>
-    </div>
+    </article>
 
-</div>
+</main>
 </center>
+
     <footer>
-            <p> &copy; 2016 DancingDoll </p>
+            <p> &copy; 2016 DancingDoll </p> 
     </footer>
-
-
-
-<script type="text/javascript">
-    var getNavHeight = $('.navmenu')
-</script>
+    
 
 </body>
 </html>
